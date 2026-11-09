@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainbow Blast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game">
+        <header>
+            <h1>RAINBOW <span>BLAST</span></h1>
+            <div class="scores">
+                <div class="score-box">
+                    <small>SCORE</small>
+                    <strong id="score">0</strong>
+                </div>
+                <div class="score-box">
+                    <small>BEST</small>
+                    <strong id="best">0</strong>
+                </div>
+            </div>
+        </header>
+
+        <div class="board" id="board"></div>
+
+        <div class="message" id="message">CHOOSE YOUR BLOCK</div>
+
+        <div class="pieces" id="pieces"></div>
+
+        <button id="restart">↻ RESTART</button>
+    </div>
+
+    <div class="game-over hidden" id="gameOver">
+        <div class="over-box">
+            <h1>GAME OVER</h1>
+            <p>Your score: <span id="finalScore">0</span></p>
+            <button onclick="restartGame()">PLAY AGAIN</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
